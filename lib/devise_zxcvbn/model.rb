@@ -40,7 +40,7 @@ module Devise
       end
 
       def zxcvbn_feedback
-        feedback = password_score.feedback.values.flatten.reject(&:empty?)
+        feedback = password_score.feedback.suggestions.flatten.reject(&:empty?)
         return "Add another word or two. Uncommon words are better." if feedback.empty?
 
         feedback.join(". ").gsub(/\.\s*\./, ".")
