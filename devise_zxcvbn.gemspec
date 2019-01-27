@@ -6,11 +6,11 @@ require 'devise_zxcvbn/version'
 Gem::Specification.new do |spec|
   spec.name          = "devise_zxcvbn"
   spec.version       = DeviseZxcvbn::VERSION
-  spec.authors       = ["Bit Zesty"]
-  spec.email         = ["info@bitzesty.com"]
-  spec.description   = %q{This gems works with devise to provide backend password strength checking via zxcvbn-js to reject weak passwords }
+  spec.authors       = ["Bit Zesty", "mashedkeyboard"]
+  spec.email         = ["info@bitzesty.com", "curtis@mashedkeyboard.me"]
+  spec.description   = %q{This gems works with devise to provide backend password strength checking via zxcvbn-ruby to reject weak passwords }
   spec.summary       = %q{Devise plugin to reject weak passwords}
-  spec.homepage      = "https://github.com/bitzesty/devise_zxcvbn"
+  spec.homepage      = "https://github.com/mashedkeyboard/devise_zxcvbn"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
@@ -26,5 +26,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "byebug"
 
   spec.add_runtime_dependency "devise"
-  spec.add_runtime_dependency("zxcvbn-js", "~> 4.4.1")
+  spec.add_runtime_dependency("zxcvbn-ruby", require: 'zxcvbn')
 end
