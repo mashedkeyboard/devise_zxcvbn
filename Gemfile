@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in devise_zxcvbn.gemspec
+gem 'zxcvbn-ruby', require: 'zxcvbn'
 gemspec
