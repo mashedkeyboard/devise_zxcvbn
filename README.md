@@ -1,10 +1,6 @@
 # devise_zxcvbn
 
-[![Gem Version](https://badge.fury.io/rb/devise_zxcvbn.png)](http://badge.fury.io/rb/devise_zxcvbn)
-[![Circle CI](https://circleci.com/gh/bitzesty/devise_zxcvbn.svg?style=svg)](https://circleci.com/gh/bitzesty/devise_zxcvbn)
-[![Code Climate](https://codeclimate.com/github/bitzesty/devise_zxcvbn/badges/gpa.svg)](https://codeclimate.com/github/bitzesty/devise_zxcvbn)
-
-Plugin for [devise](https://github.com/plataformatec/devise) to reject weak passwords, using [zxcvbn-js](https://github.com/bitzesty/zxcvbn-js) which is a ruby port of [zxcvbn: realistic password strength estimation](https://tech.dropbox.com/2012/04/zxcvbn-realistic-password-strength-estimation/).
+Plugin for [devise](https://github.com/plataformatec/devise) to reject weak passwords, using [zxcvbn-ruby](https://github.com/envato/zxcvbn-ruby) which is a ruby port of [zxcvbn: realistic password strength estimation](https://tech.dropbox.com/2012/04/zxcvbn-realistic-password-strength-estimation/).
 
 The user's password will be rejected if the score is below 4 by default. It also uses the email as user input to zxcvbn, to reject passwords containing parts of the email (if using zxcvbn.js on the frontend you should also do this to get the same score).
 
